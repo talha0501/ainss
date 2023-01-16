@@ -16,10 +16,15 @@ class DoClassAttendance extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height,
               child: ListView.builder(
-                  itemCount: 10,
+                padding: EdgeInsets.symmetric(vertical: 10),
+                  itemCount: 15,
                   itemBuilder: (BuildContext context, index) {
-                    return StudentnameattendanceWidget(
-                      sname: "Talha",
+                    return Container(
+                      margin: EdgeInsets.symmetric(vertical: 5),
+                      child: StudentnameattendanceWidget(
+                        sname: "Talha",
+                        rollnum: 1,
+                      ),
                     );
                   }))
         ],
@@ -30,13 +35,15 @@ class DoClassAttendance extends StatelessWidget {
 
 class StudentnameattendanceWidget extends StatelessWidget {
   String sname;
-  StudentnameattendanceWidget({required this.sname});
+  int rollnum;
+  StudentnameattendanceWidget({required this.sname,required this.rollnum});
 
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
+        Text(rollnum.toString()),
         Text(sname),
         Container(
           width: 55,

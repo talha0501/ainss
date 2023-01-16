@@ -25,6 +25,11 @@ class AddStudents extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
+          CommonTextField(text: "Enter Student Roll Number", hinttext: "Roll Number"),
+          
+          SizedBox(
+            height: 20,
+          ),
           CommonTextField(text: "Enter Student Name", hinttext: "Student Name"),
           SizedBox(
             height: 20,

@@ -1,4 +1,4 @@
-package com.example.ainss
+package com.existsync.ainss
 
 import io.flutter.embedding.android.FlutterActivity
 

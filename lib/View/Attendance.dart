@@ -1,5 +1,6 @@
 import 'package:ainss/View/DoClassAttendance.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_sms/flutter_sms.dart';
 import 'package:get/get.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -12,22 +13,25 @@ class Attendance extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Attendance"),
+        title:const Text("Attendance"),
       ),
       body: SingleChildScrollView(
           child: Column(
+            mainAxisSize: MainAxisSize.min,
         children: [
           Container(
-            // margin: EdgeInsets.symmetric(horizontal: 10),
+             margin: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
             //width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,
             child: GridView.builder(
+                scrollDirection: Axis.vertical,
                 padding: EdgeInsets.zero,
+                physics: ScrollPhysics(),
                 gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
                     maxCrossAxisExtent: 200,
                     childAspectRatio: 3 / 2,
                     crossAxisSpacing: 20,
-                    mainAxisSpacing: 10),
+                    mainAxisSpacing: 15),
                 itemCount: 12,
                 itemBuilder: (BuildContext ctx, index) {
                   return InkWell(
@@ -70,7 +74,6 @@ class ClassWidget extends StatelessWidget {
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
           border: Border.all(color: Colors.blue)),
-
       // width: MediaQuery.of(context).size.width * .4,
       // height: MediaQuery.of(context).size.height * .2,
       child: Center(child: Text(index==0? "Nursery":index==1? "Prep": (index-1).toString()),),

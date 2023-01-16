@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "839041618553",
+    "project_id": "ainss-4d21a",
+    "storage_bucket": "ainss-4d21a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839041618553:android:8b85334bfc205b34ab3aa8",
+        "android_client_info": {
+          "package_name": "com.existsync.ainss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839041618553-7mr6dq8in3so4ukdn7silh90pjd8kf2d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpwItckVlJqbnWcyZbykzjKCLpTJFn7qE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839041618553-7mr6dq8in3so4ukdn7silh90pjd8kf2d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
